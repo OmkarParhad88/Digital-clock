@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+        width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main {
+        display: flex;
+    flex-direction: column;
+    padding: 27px;
+    background-color: #9ac4ff;
+    border-radius: 9px;
+    height: 230px;
+  width:330px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.con1 {
+    display: flex;
+    width: 314px;
+    justify-content: space-around;
+}
+.con1 span {
+    margin-right: -6%;
+}
+.con2{
+  display: flex;
+  flex-direction:row
+}
+.box {
+    align-items: center;
+    display: flex;
+    height: 50px;
+    width: 90px;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    font-size: 22px;
+}
+#date{
+  width:88%;
+}
+.head {
+  color: black;
+  font-size: 23px;
+  
+}
+#create {
+  width: 320px;
+  margin:5%;
+}
+.effect {
+  border-radius: 9px;
+  color: #03e9f4;
+  overflow: hidden;
+  position: absolute;
+  height: 290px;
+  width: 390px;
+  filter: hue-rotate(0deg);
+  transition: all 0s linear;
+}
+.effect:hover {
+  border: 1px solid transparent;
+}
+.effect:hover span {
+  position: absolute;
+  display: block;
+}
+.effect:hover span:nth-child(1) {
+  filter: hue-rotate(0deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #206fee);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.effect:hover span:nth-child(2) {
+  filter: hue-rotate(60deg);
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #2474f3);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.effect:hover span:nth-child(3) {
+  filter: hue-rotate(30deg);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, #3a86ff);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+    height: 2px;
+  }
+  50%,
+  100% {
+    height: 2px;
+    right: 100%;
+  }
+}
+.effect:hover span:nth-child(4) {
+  filter: hue-rotate(300deg);
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #3a86ff);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
